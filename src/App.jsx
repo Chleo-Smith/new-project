@@ -209,7 +209,7 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
           </p>
         </div>
         <button
-          onClick={() => setShow(true)}
+          onClick={() => setShow(!show)}
           className="buttons"
           aria-label="toggle discription button"
         >
