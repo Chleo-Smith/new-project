@@ -198,9 +198,9 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
 
   const [show, setShow] = useState(true);
 
-  const summaryStyles = {
-    display: show ? "block" : "none",
-  }
+  // const summaryStyles = {
+  //   display: show ? "block" : "none",
+  // }
 
   return (
     <div class="movie-container">
@@ -219,7 +219,8 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
         >
           Toggle Description
         </button>
-        <p style = {summaryStyles} class="movie-summary">{summary}</p>
+        {/* conditional rendering  */}
+        { show ? <p /*style = {summaryStyles}*/ class="movie-summary">{summary}</p> : ""}
       </div>
 
       <Counter />
