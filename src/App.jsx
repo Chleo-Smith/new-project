@@ -199,7 +199,7 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
   const [show, setShow] = useState(true);
 
   const summaryStyles = {
-    display: "none",
+    display: show ? "block" : "none",
   }
 
   return (
