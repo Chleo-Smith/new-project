@@ -1,0 +1,104 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.image {
+  /* width: 200px;
+  border-radius: 50%;
+  object-fit: cover; */
+
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.highlight {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.text {
+  font-size: large;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+
+  /* justify-content: center; */
+}
+
+button {
+  display: flex;
+  font-size: 18px;
+  margin-right: 10px;
+
+  color: rgb(46, 45, 45);
+  border-color: gray;
+  padding: 5px;
+  min-width: 3rem;
+  max-width: 30.5rem;
+  height: 1.6rem;
+
+  align-items: center;
+  justify-content: center;
+}
+.color-form-container {
+  display: flex;
+}
+
+.movie-container {
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  height: 640px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie-rating {
+  font-size: 20px;
+}
+
+.movie-summary {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.movie-card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+input {
+  width: 30rem;
+  height: 2rem;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+}
