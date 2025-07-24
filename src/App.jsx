@@ -198,6 +198,10 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
 
   const [show, setShow] = useState(true);
 
+  const summaryStyles = {
+    display: "none",
+  }
+
   return (
     <div class="movie-container">
       <img src={poster} alt={name} class="movie-poster" />
@@ -215,7 +219,7 @@ function Movie({ name, poster, summary, rating, trailer, id }) {
         >
           Toggle Description
         </button>
-        <p class="movie-summary">{summary}</p>
+        <p style = {summaryStyles} class="movie-summary">{summary}</p>
       </div>
 
       <Counter />
