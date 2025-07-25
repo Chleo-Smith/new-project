@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import { UserList } from "./UserList";
 // import { ColorGame } from "./ColorGame";
-import { Counter } from "./Counter";
+import { Counter } from "../components/Counter";
 
 export function Movie({ name, poster, summary, rating, trailer, id }) {
   const ratingStyles = {
