@@ -9,7 +9,7 @@ export function User({ name, image }) {
     <div>
       <Im image={image} />
       <Msg name={name} />
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }
